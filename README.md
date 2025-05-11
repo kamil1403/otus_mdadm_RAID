@@ -1,3 +1,5 @@
+![RAID Banner](https://github.com/kamil1403/otus_mdadm_RAID/raw/main/screenshots/Banner.jpg)
+
 ## otus_mdadm_RAID
 Дата: 11-05-2025   
 Автор: Kamil Ibragimov
