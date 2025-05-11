@@ -5,9 +5,6 @@
 <h1 align="center">otus_mdadm_RAID</h1>
 <p align="center">Дата: 11-05-2025<br>Автор: Kamil Ibragimov</p>
 
-## otus_mdadm_RAID
-Дата: 11-05-2025   
-Автор: Kamil Ibragimov
 
 ## Домашнее задание: работа с mdadm   
 Задание:   
