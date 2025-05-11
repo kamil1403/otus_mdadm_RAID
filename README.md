@@ -27,7 +27,7 @@
 
 <a id="script"></a>
 ## ✍🏻 Скрипт для сборки RAID 1
-# Запуск через sudo bash script.sh
+Запуск через sudo bash script.sh
 
 ```bash
 #!/bin/bash
