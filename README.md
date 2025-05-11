@@ -16,6 +16,7 @@
 ## 🧭 Оглавление
 
 - [✍🏻 Скрипт для сборки RAID 1](#script)
+- [✍🏻 Скрипт симуляции отказа диска](#fixraid)
 - [📀 Диски и устройства](#hard)
 - [🧱 Разметка и подготовка диска](#partition)
 - [🗃️ Сборка RAID 1](#setup)
@@ -40,6 +41,23 @@ mount /dev/md127 /mnt/raid01
 echo "/dev/md127 /mnt/raid01 ext4 defaults 0 0" >> /etc/fstab
 mdadm --detail --scan >> /etc/mdadm/mdadm.conf
 update-initramfs -u
+```
+
+---
+
+<a id="fixraid"></a>
+## ✍🏻 Скрипт симуляции отказа диска
+Запуск через sudo bash script.sh
+Дать права chmod +x script.sh
+
+```bash
+#!/bin/bash
+
+mdadm /dev/md127 --fail /dev/sdb1
+mdadm /dev/md127 --remove /dev/sdb1
+mdadm --zero-superblock /dev/sdb3 >/dev/null 2>&1
+mdadm /dev/md127 --add /dev/sdb3
+watch -n 1 cat /proc/mdstat
 ```
 
 ---
