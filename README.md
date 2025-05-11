@@ -27,10 +27,10 @@
 
 <a id="script"></a>
 ## ✍🏻 Скрипт для сборки RAID 1
+# Запуск через sudo bash script.sh
 
 ```bash
-# Запуск через sudo bash script.sh
-# !/bin/bash
+#!/bin/bash
 
 mkdir -p /mnt/raid01
 apt-get install -y mdadm
