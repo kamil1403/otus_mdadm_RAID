@@ -16,7 +16,7 @@
 • Отчет по командам для починки RAID и созданию разделов   
 
 Результат:   
-• Cкрипт для создания RAID 1 написан. Результат см. на скриншотах "create_RAID_1_1" и "create_RAID_1_2"   
+• Cкрипт для создания RAID 1 написан. Результат см. на скриншотах ["create_RAID_1_1"]https://github.com/kamil1403/otus_mdadm_RAID/blob/main/screenshots/create_RAID_1_1.png) и "create_RAID_1_2"   
 • Отчет по командам для починки RAID см. на скриншотах "fail_RAID_1_1" и "fail_RAID_1_2"   
 • Отчет по командам для созднания GPT разделов на RAID см. на скриншотах "GPT_RAID_1_1", "GPT_RAID_1_2" и "GPT_RAID_1_3"   
 
