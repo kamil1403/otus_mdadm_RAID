@@ -2,7 +2,6 @@
 Дата: 11-05-2025   
 Автор: Kamil Ibragimov
 
-![Описание скриншота](https://github.com/kamil1403/otus_mdadm_RAID/blob/main/screenshots/create_RAID_1_1.png)
 [Текст-описание](https://github.com/kamil1403/otus_mdadm_RAID/blob/main/screenshots/create_RAID_1_1.png)
 
 ## Домашнее задание: работа с mdadm   
