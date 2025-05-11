@@ -188,7 +188,7 @@ for i in $(seq 1 5); do sudo mkfs.ext4 /dev/md127p$i; done
 # Создает точки монтирования
 sudo mkdir -p /raid/part{1,2,3,4,5}
 # Монтирует разделы 
-for i in $(seq 1 5); do mount /dev/md0p$i /raid/part$i; done
+for i in $(seq 1 5); do mount /dev/md127p$i /raid/part$i; done
 # Редактирует файл fstab для автоматического монтирования разделов при загрузке
 nano /etc/fstab
 # Пример строки
