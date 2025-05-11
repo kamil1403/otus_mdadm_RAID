@@ -23,6 +23,22 @@
 
 ---
 
+## Скрипт для создания RAID 1
+
+```bash
+# запуск через sudo bash script.sh
+# !/bin/bash
+
+mkdir -p /mnt/raid01
+apt-get install -y mdadm
+mdadm --create --verbose /dev/md127 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdb2
+mkfs.ext4 /dev/md127
+mount /dev/md127 /mnt/raid01
+echo "/dev/md127 /mnt/raid01 ext4 defaults 0 0" >> /etc/fstab
+mdadm --detail --scan >> /etc/mdadm/mdadm.conf
+update-initramfs -u
+```
+
 ## 🧱 Разметка и подготовка диска
 
 ```bash
