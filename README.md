@@ -2,8 +2,6 @@
 Дата: 11-05-2025   
 Автор: Kamil Ibragimov
 
-[Текст-описание](https://github.com/kamil1403/otus_mdadm_RAID/blob/main/screenshots/create_RAID_1_1.png)
-
 ## Домашнее задание: работа с mdadm   
 Задание:   
 • Добавить в виртуальную машину несколько дисков   
