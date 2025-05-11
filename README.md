@@ -28,7 +28,8 @@
 
 <a id="script"></a>
 ## ✍🏻 Скрипт для сборки RAID 1
-Запуск через sudo bash script.sh
+Запуск через sudo bash script.sh   
+Дать права chmod +x script.sh
 
 ```bash
 #!/bin/bash
@@ -47,7 +48,7 @@ update-initramfs -u
 
 <a id="fixraid"></a>
 ## ✍🏻 Скрипт симуляции отказа диска
-Запуск через sudo bash script.sh
+Запуск через sudo bash script.sh   
 Дать права chmod +x script.sh
 
 ```bash
