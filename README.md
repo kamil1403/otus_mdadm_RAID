@@ -186,7 +186,7 @@ sudo parted /dev/md127 mkpart primary ext4 80% 100%
 # Создает файловые системы (ext4)
 for i in $(seq 1 5); do sudo mkfs.ext4 /dev/md127p$i; done
 # Создает точки монтирования
-sudo mkdir -p /mnt/raid_part{1,2,3,4,5}
+sudo mkdir -p /raid/part{1,2,3,4,5}
 # Монтирует разделы 
 for i in $(seq 1 5); do mount /dev/md0p$i /raid/part$i; done
 # Редактирует файл fstab для автоматического монтирования разделов при загрузке
