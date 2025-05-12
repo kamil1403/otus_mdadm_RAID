@@ -183,7 +183,7 @@ cat /proc/mdstat
 ## ⚙️ Создание разделов на RAID
 
 ```bash
-# Размонтироует RAID
+# Размонтирует RAID
 sudo umount /mnt/raid01 
 # Создаст GPT разметку
 sudo parted -s /dev/md127 mklabel gpt
@@ -201,7 +201,7 @@ sudo mkdir -p /raid/part{1,2,3,4,5}
 for i in $(seq 1 5); do mount /dev/md127p$i /raid/part$i; done
 # Редактирует файл fstab для автоматического монтирования разделов при загрузке
 nano /etc/fstab
-# Пример строки
+# Пример строки для автоматического монтирования разделов
 for i in {1..5}; do echo "/dev/md127p$i /mnt/raid_part$i ext4 defaults 0 2" | sudo tee -a /etc/fstab; done
 
 ```
